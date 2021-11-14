@@ -9,7 +9,7 @@ import UIKit
 
 class LoanTableViewController: UITableViewController {
 
-    private var loans = [Loan]() {
+    var loans: [Loan] {
         didSet {
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -17,15 +17,22 @@ class LoanTableViewController: UITableViewController {
         }
     }
     
+    init(loans: [Loan]) {
+        self.loans = loans
+        
+        super.init(style: .plain)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        self.loans = []
+        super.init(coder: aDecoder)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.estimatedRowHeight = 92.0
         tableView.rowHeight = UITableView.automaticDimension
-        
-        NetworkManager.shared.fetchLoanData { loans in
-            self.loans = loans
-        }
     }
 
     override func didReceiveMemoryWarning() {
