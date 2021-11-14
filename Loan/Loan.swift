@@ -6,11 +6,20 @@
 
 import Foundation
 
-struct Loan {
+
+struct Loans: Codable {
+    var loans: [Loan]
+}
+
+struct Loan: Codable {
     
     var name: String = ""
-    var country: String = ""
     var use: String = ""
-    var amount: Int = 0
+    var loan_amount: Int = 0
+    var location: Location = Location()
+    
+    struct Location: Codable {
+        var country: String = ""
+    }
     
 }
