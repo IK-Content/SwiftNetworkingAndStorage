@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58CC50822740B2F6005B3ED5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CC50812740B2F5005B3ED5 /* NetworkManager.swift */; };
 		F498908D1DA39D610064F982 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498908C1DA39D610064F982 /* AppDelegate.swift */; };
 		F49890921DA39D610064F982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F49890901DA39D610064F982 /* Main.storyboard */; };
 		F49890941DA39D610064F982 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F49890931DA39D610064F982 /* Assets.xcassets */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		58CC50812740B2F5005B3ED5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F49890891DA39D610064F982 /* Loan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F498908C1DA39D610064F982 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F49890911DA39D610064F982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 				F498909E1DA39EC10064F982 /* LoanTableViewController.swift */,
 				F49890A01DA39ED80064F982 /* LoanTableViewCell.swift */,
 				F4AE65591FE2304D0019FB75 /* Loan.swift */,
-				58CC50812740B2F5005B3ED5 /* NetworkManager.swift */,
 			);
 			path = Loan;
 			sourceTree = "<group>";
@@ -148,7 +145,6 @@
 			files = (
 				F49890A11DA39ED80064F982 /* LoanTableViewCell.swift in Sources */,
 				F498909F1DA39EC10064F982 /* LoanTableViewController.swift in Sources */,
-				58CC50822740B2F6005B3ED5 /* NetworkManager.swift in Sources */,
 				F498908D1DA39D610064F982 /* AppDelegate.swift in Sources */,
 				F4AE655A1FE2304D0019FB75 /* Loan.swift in Sources */,
 			);
